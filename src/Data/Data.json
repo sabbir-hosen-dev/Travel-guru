@@ -1,0 +1,20 @@
+[
+  {
+    "id" : "2",
+    "name": "Sajek Valley",
+    "dec": "Sajek Valley is a picturesque hill station in the Rangamati district of Bangladesh. It is known for its stunning landscape, lush green hills, and indigenous communities.",
+    "img": "images/Sajek.png"
+  },
+  {
+    "id":"1",
+    "name": "Sundarbans",
+    "dec": "The Sundarbans is the largest mangrove forest in the world and is located in the coastal region of Bangladesh and India. It is home to the famous Royal Bengal Tigers and diverse wildlife.",
+    "img": "images/sundorbon.png"
+  },
+  {
+    "id":"3",
+    "name": "Sreemangal",
+    "dec": "Sreemangal is a town located in the Moulvibazar district of Bangladesh. It is known as the 'Tea Capital' of Bangladesh due to its vast tea gardens and tea production.",
+    "img": "images/Sreemongol.png"
+  }
+]

@@ -1,0 +1,37 @@
+.content-wrap{
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap:50px;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.content{
+  display: flex;
+  justify-content: space-around;
+  gap:50px;
+}
+.left-content{
+  width: 50%;
+}
+.img-wrap{
+  display: flex;
+}
+.right-content{
+  width: 50%;
+  overflow: hidden;
+}
+.left-btn,.right-btn{
+  color:#fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.left-btn:hover,.right-btn:hover{
+  color:#ffffff90;
+}
