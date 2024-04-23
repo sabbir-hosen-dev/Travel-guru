@@ -5,7 +5,7 @@ import "./Navber.css";
 
 function Navber() {
   return (
-    <nav className="nav-wrap wrap">
+    <nav className="nav-wrap ">
       <div className="logo">
         <h1>Trevel.</h1>
       </div>

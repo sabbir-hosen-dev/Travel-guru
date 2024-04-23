@@ -13,22 +13,24 @@ a{
 }
 img{
   object-fit: fill;
+  width: 100%;
+  display: block;
 }
 body{
   width: 100vw;
-  height:100vh;
   overflow: hidden;
+  height:100vh;
 }
 .btn{
   background: #ffc400;
   color:#fff;
+  display: inline-block;
   padding: 10px 20px;
   outline: none;
   border: none;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  display: inline-block;
   transition: .3s ease;
 }
 .btn:hover{
@@ -43,12 +45,11 @@ body{
   background-repeat: no-repeat;
 }
 .container{
-  padding: var(--padding-lg);
   margin:0 auto;
 }
 
 @media (max-width:1000px) {
-  .container{
-   background: red;
+  .nav-wrap{
+    padding:0% 0%;
   }
 }

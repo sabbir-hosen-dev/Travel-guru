@@ -53,3 +53,14 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width:1000px) {
+  .nav-wrap{
+    padding:0% 5%;
+  }
+}
+@media (max-width:650px) {
+  .nav-wrap{
+    padding:0% 2%;
+  }
+}
