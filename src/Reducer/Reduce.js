@@ -2,7 +2,12 @@ import data from "../Data/Data.json";
 
 export const initialState = {
   data: data,
-  content: { name: "", img: "", curentId: 0 },
+  content: {
+    name: "",
+    img: "",
+    curentId: 0,
+    showDate:false,
+  },
 };
 
 export const reducer = (state, action) => {
@@ -51,6 +56,12 @@ export const reducer = (state, action) => {
           curentId: action.payload,
         },
       };
+
+    case "UPDATE_RIGHT":
+      return{
+        ...state,
+        content :{...state.content,showDate: action.payload}
+      }
 
     default:
       return state;

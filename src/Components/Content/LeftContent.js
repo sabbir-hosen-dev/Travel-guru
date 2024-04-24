@@ -3,7 +3,7 @@ import React from "react";
 import useTravelContex from "../../Hook/useTravelContex";
 
 function LeftContent() {
-  const {content,data} = useTravelContex();
+  const {content,data,updateRight} = useTravelContex();
   
   const {name,dec} = data[content.curentId]
   return (
@@ -11,7 +11,7 @@ function LeftContent() {
       <h1>{name}</h1>
       <p>{dec}</p>
       <div className="btn">
-        <div className="boking-btn">
+        <div className="boking-btn" onClick={() => updateRight(true)}>
           Booking <CgArrowRight />
         </div>
       </div>

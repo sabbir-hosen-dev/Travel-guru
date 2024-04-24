@@ -1,21 +1,30 @@
 import React from "react";
 import useTravelContex from "../../Hook/useTravelContex";
+import DateForm from "../DateFrom/DateForm";
 
 function RightContent() {
-  const { data, content,handleClick } = useTravelContex();
+  const { data, content } = useTravelContex();
   const curentActive = content.curentId;
 
   return (
     <div className="right-content">
-      {data.map((data, index) => (
-        <div
-          key={index}
-          className={`img-wrap ${index === curentActive ? "active" : ""}`}
-          onClick={() => handleClick(index)}
-        >
-          <img src={data.img} alt="" />
+      {content.showDate ? (
+        <div>
+          <DateForm />
         </div>
-      ))}
+      ) : (
+        <>
+          {data.map((data, index) => (
+            <div
+              key={index}
+              className={`img-wrap ${index === curentActive ? "active" : ""}`}
+              onClick={() => index}
+            >
+              <img src={data.img} alt="" />
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 }

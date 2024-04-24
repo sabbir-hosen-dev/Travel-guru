@@ -47,7 +47,17 @@ body{
 .container{
   margin:0 auto;
 }
-
+.error-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.error-wrap h1{
+  font-size: 45px;
+  color:#111;
+}
 @media (max-width:1000px) {
   .nav-wrap{
     padding:0% 0%;

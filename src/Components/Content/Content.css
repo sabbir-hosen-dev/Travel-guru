@@ -33,6 +33,7 @@
 .right-content {
   width: 60%;
   display: flex;
+  justify-content: end;
   gap: 20px;
 }
 

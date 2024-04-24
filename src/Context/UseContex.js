@@ -17,7 +17,10 @@ const TravelProvider = ({ children }) => {
     },
     handlePrev: (prev) =>{
       dispatch({type:"PREV_BTN",payload:prev})
-    }
+    },
+    updateRight:(right) => {
+      dispatch({type:"UPDATE_RIGHT",payload:right})
+    } 
   };
   return (
     <TravelContex.Provider value={value}>{children}</TravelContex.Provider>

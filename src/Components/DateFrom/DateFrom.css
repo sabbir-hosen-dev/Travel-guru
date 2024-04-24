@@ -1,0 +1,35 @@
+.date-from-wrap {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.input label {
+  color:#767171;
+  font-weight: bold;
+  font-size: 13px;
+}
+.input input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #33333330;
+  margin-bottom: 20px;
+}
+.date-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+/* ::-webkit-datetime-edit-text { padding: 0 2rem; } */
+::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field,
+::-webkit-datetime-edit-text
+ { color:#1f1f1fce }
+/* ::-webkit-calendar-picker-indicator { background: #07070730;} */

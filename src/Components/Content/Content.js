@@ -1,28 +1,30 @@
 import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
 
-
 import "./Content.css";
 
-import LeftContent from './LeftContent';
+import LeftContent from "./LeftContent";
 import RightContent from "./RightContent";
 import useTravelContex from "../../Hook/useTravelContex";
 
-
 function Content() {
-
-  const {handleNext,handlePrev} = useTravelContex()
+  const { handleNext, handlePrev, content } = useTravelContex();
 
   return (
-    <section className="content-wrap">
+    <section
+      className="content-wrap"
+      style={{ paddingRight: content.showDate ? "10%" : " " }}
+    >
       <div className="content">
         <LeftContent />
         <RightContent />
       </div>
-      <div className="control-wrap">
-        <AiOutlineLeft className="left-btn" onClick={() => handlePrev()} />
-        <AiOutlineRight className="right-btn" onClick={() => handleNext()} />
-      </div>
+      {!content.showDate && (
+        <div className="control-wrap">
+          <AiOutlineLeft className="left-btn" onClick={() => handlePrev()} />
+          <AiOutlineRight className="right-btn" onClick={() => handleNext()} />
+        </div>
+      )}
     </section>
   );
 }

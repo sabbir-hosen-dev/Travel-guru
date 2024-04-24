@@ -53,6 +53,21 @@
   justify-content: center;
   align-items: center;
 }
+.login-wrap .nav-wrap .serch-inpu{
+  color:#111;
+}
+.login-wrap .nav-wrap .logo h1{
+  color:#111;
+}
+.login-wrap .nav-wrap .btn-wrap .btn{
+  color:#111;
+}
+.login-wrap .nav-wrap .serch-inpu input{
+  color:#111;
+}
+.login-wrap .nav-wrap li a{
+  color:#111;
+}
 
 @media (max-width:1000px) {
   .nav-wrap{
