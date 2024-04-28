@@ -2,6 +2,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Navber.css";
+import { Link } from "react-router-dom";
 
 function Navber() {
   return (
@@ -26,7 +27,8 @@ function Navber() {
         <a href="">Contact</a>
       </li>
       <div className="btn-wrap">
-        <button className="btn">Login</button>
+        <Link className="btn" to="/login">Login</Link>
+        
       </div>
     </nav>
   );

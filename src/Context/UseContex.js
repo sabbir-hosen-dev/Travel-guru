@@ -9,6 +9,7 @@ const TravelProvider = ({ children }) => {
   const value = {
     data: state.data,
     content: state.content,
+    login: state.login,
     handleClick: (index) => {
       dispatch({ type: "CLICK", payload: index });
     },
@@ -20,6 +21,9 @@ const TravelProvider = ({ children }) => {
     },
     updateRight:(right) => {
       dispatch({type:"UPDATE_RIGHT",payload:right})
+    } ,
+    updateCurent:(curent) => {
+      dispatch({type:"UPDATE_CURENT",payload:curent})
     } 
   };
   return (

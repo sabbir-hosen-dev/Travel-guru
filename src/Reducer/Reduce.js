@@ -8,6 +8,13 @@ export const initialState = {
     curentId: 0,
     showDate:false,
   },
+  login:{
+    signIn : false,
+    firstName:"",
+    lastName:"",
+    email:"",
+    password:""
+  }
 };
 
 export const reducer = (state, action) => {
@@ -18,7 +25,7 @@ export const reducer = (state, action) => {
 
       var selectNext = 0;
       if (curentId === data.length - 1) {
-        selectNext = data.length - 1;
+        selectNext = 0;
       } else {
         selectNext = curentId + 1;
       }
@@ -36,7 +43,7 @@ export const reducer = (state, action) => {
       var selectPrev = 0;
 
       if (curentNumber === 0) {
-        console.log("3");
+        selectPrev = state.data.length -1
       } else {
         selectPrev = curentNumber - 1;
       }
@@ -61,6 +68,12 @@ export const reducer = (state, action) => {
       return{
         ...state,
         content :{...state.content,showDate: action.payload}
+      }
+
+    case "UPDATE_CURENT":
+      return{
+        ...state,
+        content :{...state.content,curentId: action.payload}
       }
 
     default:

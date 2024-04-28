@@ -3,7 +3,7 @@ import useTravelContex from "../../Hook/useTravelContex";
 import DateForm from "../DateFrom/DateForm";
 
 function RightContent() {
-  const { data, content } = useTravelContex();
+  const { data, content , updateCurent} = useTravelContex();
   const curentActive = content.curentId;
 
   return (
@@ -18,7 +18,7 @@ function RightContent() {
             <div
               key={index}
               className={`img-wrap ${index === curentActive ? "active" : ""}`}
-              onClick={() => index}
+              onClick={() => updateCurent(index)}
             >
               <img src={data.img} alt="" />
             </div>
